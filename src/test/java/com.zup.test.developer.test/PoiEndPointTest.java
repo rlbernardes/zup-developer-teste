@@ -25,10 +25,9 @@ import java.util.List;
 
 //Inicializamos o SpringRunner
 @RunWith(SpringRunner.class)
-//Setamos como uma classe de testes com o Server inicializando em uma porta fixa
-//Essa porta pode ser a 8080 ou a que desejarmos setada no nosso aplication.properties
+//A classe de testes foi setada com o Server inicializando em uma porta fixa
+//Essa porta pode é a 8080 ou a que desejarmos setada no nosso aplication.properties
 //Acesse src/test/resources/application.properties caso deseje alterar
-//No nosso caso é a 8888 como você pode ver no aplication.properties "server.port = 8888"
 @EntityScan(basePackages = { "com.zup.test.developer.service", "com.zup.test.developer.data.domain", "com.zup.test.developer.service.impl"})
 @EnableJpaRepositories(basePackages = { "com.zup.test.developer.data.repository"})
 @ComponentScan(basePackages = {"com.zup.test.developer.controller", "com.zup.test.developer.data.domain", "com.zup.test.developer.service.impl"})
